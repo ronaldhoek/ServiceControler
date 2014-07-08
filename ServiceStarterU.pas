@@ -2,6 +2,12 @@ unit ServiceStarterU;
 
 interface
 
+(*
+  Based on the service control component made bij Masterijn (January 2004)
+  
+  http://programmersheaven.com/discussion/234511/stopping-and-starting-services-in-delphi-code
+*)
+
 uses
   WinSvc, Windows, Messages, SysUtils, Classes;
 
