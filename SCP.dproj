@@ -3,7 +3,7 @@
 			<ProjectGuid>{CF5B245D-5734-43D3-B2F9-E1A1D99BDD7A}</ProjectGuid>
 			<ProjectVersion>13.4</ProjectVersion>
 			<FrameworkType>VCL</FrameworkType>
-			<MainSource>SC.dpr</MainSource>
+			<MainSource>SCP.dpr</MainSource>
 			<Base>True</Base>
 			<Config Condition="'$(Config)'==''">Debug</Config>
 			<Platform Condition="'$(Platform)'==''">Win64</Platform>
@@ -59,7 +59,7 @@
 			<VerInfo_MajorVer>0</VerInfo_MajorVer>
 			<DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;$(DCC_Namespace)</DCC_Namespace>
 			<DCC_UsePackage>fmx;IndySystem;DBXInterBaseDriver;DataSnapCommon;DataSnapClient;DataSnapServer;DataSnapProviderClient;DbxCommonDriver;dbxcds;DBXOracleDriver;CustomIPTransport;dsnap;fmxase;IndyCore;inetdbxpress;IPIndyImpl;bindcompfmx;rtl;dbrtl;DbxClientDriver;bindcomp;inetdb;xmlrtl;IndyProtocols;DBXMySQLDriver;soaprtl;bindengine;DBXInformixDriver;DBXFirebirdDriver;inet;fmxobj;DBXSybaseASADriver;fmxdae;dbexpress;DataSnapIndy10ServerTransport;$(DCC_UsePackage)</DCC_UsePackage>
-			<VerInfo_Keys>CompanyName=;FileDescription=Service Controler;FileVersion=0.1.0.0;InternalName=SC;LegalCopyright=;LegalTrademarks=;OriginalFilename=SC.exe;ProductName=Service Controller;ProductVersion=0.1;Comments=Commandline Service Control Application</VerInfo_Keys>
+			<VerInfo_Keys>CompanyName=;FileDescription=Service Controler Plus;FileVersion=0.1.0.0;InternalName=SCP;LegalCopyright=;LegalTrademarks=;OriginalFilename=SCP.exe;ProductName=Service Controller Plus;ProductVersion=0.1;Comments=Commandline Service Control Application</VerInfo_Keys>
 			<DCC_DcuOutput>.\$(Config)\$(Platform)\</DCC_DcuOutput>
 			<DCC_ExeOutput>.\$(Config)\$(Platform)\</DCC_ExeOutput>
 			<DCC_E>false</DCC_E>
@@ -69,12 +69,12 @@
 			<DCC_K>false</DCC_K>
 		</PropertyGroup>
 		<PropertyGroup Condition="'$(Base_Win64)'!=''">
-			<Manifest_File>SC.exe.manifest</Manifest_File>
+			<Manifest_File>SCP.exe.manifest</Manifest_File>
 			<DCC_Namespace>Winapi;System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;$(DCC_Namespace)</DCC_Namespace>
 			<DCC_UsePackage>DBXSybaseASEDriver;vclimg;vcldb;vcldsnap;DBXDb2Driver;vcl;DBXMSSQLDriver;webdsnap;adortl;DBXOdbcDriver;vclactnband;bindcompvcl;vclie;vcltouch;websnap;VclSmp;dsnapcon;vclx;$(DCC_UsePackage)</DCC_UsePackage>
 		</PropertyGroup>
 		<PropertyGroup Condition="'$(Base_Win32)'!=''">
-			<Manifest_File>SC.exe.manifest</Manifest_File>
+			<Manifest_File>SCP.exe.manifest</Manifest_File>
 			<DCC_Namespace>Winapi;System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
 			<DCC_UsePackage>JvGlobus;office2K;JvMM;Apollo6SDED2012;JvManagedThreads;JvDlgs;JvCrypt;TeeDB;iw12tmsgriddedxe2;Rave100VCL;vclib;inetdbbde;iw12tmsdxe2;JvNet;JvDotNetCtrls;DBXSybaseASEDriver;adsdxe2studio;vclimg;fmi;Apollo6D2012;JvXPCtrls;CADBRTLD2012;vcldb;vcldsnap;InfoZipD2012d;Skype4COMD2012;DBXDb2Driver;Intraweb_120_160;JvCore;vclribbon;vcl;CloudService;DBXMSSQLDriver;CodeSiteExpressPkg;FmxTeeUI;JvDB;JvAppFrm;JvRuntimeDesign;webdsnap;iw12tmsxlsdxe2;SpreadCOM8D2012;JclDeveloperTools;JvDocking;adortl;JvWizards;InfoZipD2012;DCP_D2012;MaxD2012;JvHMI;CARTLD2012;JvBands;vcldbx;CASOAPD2012;My_ExprEval2012;iw12tmsgriddxe2;JvPluginSystem;CADBVCLD2012;CAIW12Controls;Tee;JclContainers;DBXOdbcDriver;JvCmp;JvSystem;svnui;ibxpress;JvTimeFramework;JvControls;TeeUI;FMXTee;vclactnband;JvJans;bindcompvcl;SpreadCOMCCD2012;JvStdCtrls;SpreadComD2012;vclie;Jcl;JvCustom;JvPageComps;CAVCLD2012;JvPrintPreview;vcltouch;websnap;VclSmp;DataSnapConnectors;dsnapcon;iw12tmssedxe2;TscExcelExport_D2012;JclVcl;JvPascalInterpreter;NTTools62D2012;vclx;svn;bdertl;JvBDE;$(DCC_UsePackage)</DCC_UsePackage>
 		</PropertyGroup>
@@ -86,6 +86,7 @@
 			<DCC_RemoteDebug>true</DCC_RemoteDebug>
 		</PropertyGroup>
 		<PropertyGroup Condition="'$(Cfg_1_Win64)'!=''">
+			<Manifest_File>SCP.exe.manifest</Manifest_File>
 			<Debugger_RunParams>&quot;SQL Server (EXPR2008R2)&quot; /d /stop</Debugger_RunParams>
 		</PropertyGroup>
 		<PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
@@ -99,7 +100,7 @@
 			<DCC_DebugInformation>false</DCC_DebugInformation>
 		</PropertyGroup>
 		<PropertyGroup Condition="'$(Cfg_2_Win64)'!=''">
-			<Manifest_File>SC.exe.manifest</Manifest_File>
+			<Manifest_File>SCP.exe.manifest</Manifest_File>
 		</PropertyGroup>
 		<ItemGroup>
 			<DelphiCompile Include="$(MainSource)">
@@ -151,7 +152,7 @@
 						<VersionInfoKeys Name="Comments"/>
 					</VersionInfoKeys>
 					<Source>
-						<Source Name="MainSource">SC.dpr</Source>
+						<Source Name="MainSource">SCP.dpr</Source>
 					</Source>
 					<Excluded_Packages>
 						<Excluded_Packages Name="$(BDSBIN)\dclofficexp160.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>

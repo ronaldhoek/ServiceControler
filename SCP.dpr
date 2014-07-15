@@ -1,4 +1,4 @@
-program SC;
+program SCP;
 
 {$APPTYPE CONSOLE}
 
